@@ -25,10 +25,11 @@ Please do step 1 and 2 before the talk, if everyone is downloading 5 GB of windo
     - Install Virtualbox, unzip the Window VM image and double click the .ova file in the zip. This will start the 
     import of the image: click through the wizard
     - Try to start the VM from Virtualbox: if it does not work you might have to enable Virtualization in your BIOS
+    - Install the Guest Additions inside the VM (Top menu: Devices -> Install Guest Additions CD). This will make the screen resizable and 
+    support bidirection copy-paste (enable from Devices -> Shared Clipboard -> Bidirectional)
     - Continue to step 3 from inside the VM
     
 3. Download the free Digital Mars C compiler from http://ftp.digitalmars.com/Digital_Mars_C++/Patch/dm857c.zip
 and extract to C:\talk\tools\dm
 4. Download the latest x64dbg (open source) https://sourceforge.net/projects/x64dbg/files/snapshots/snapshot_2019-01-20_22-50.zip/download
 and extract to C:\talk\tools\x64dbg
-     http://ftp.digitalmars.com/Digital_Mars_C++/Patch/dm857c.zip
