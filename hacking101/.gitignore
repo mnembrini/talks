@@ -1,2 +1,8 @@
 .idea
 *.iml
+
+*.obj
+*.map
+*.exe
+input.txt
+
