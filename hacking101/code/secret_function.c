@@ -17,7 +17,7 @@ void echo(char *input)
 		printf("%02X", (unsigned char)*c); 
 		c++;
 	} while (*c != 0);
-	printf("\n")
+	printf("\n");
 	
 	// overflow happens here
     strcpy(buffer, input);
@@ -29,14 +29,19 @@ void echo(char *input)
 int main(int argc, char *argv[])
 {
 
+	if (argc<2) {
+		printf("Usage: secret_function.exe filename");
+		exit(-1);
+	}
+
 	printf("Waiting 20s ...\n");    
 	// give time to attach a debugger
 	Sleep(20000);
 	
-	// read input from file
+	// read input from file given as  first argument
 	FILE *file;
 	char buffer[200];
-	file = fopen("input.txt", "rb");
+	file = fopen(argv[1], "rb");
 	fread(buffer,1, 200, file);
 	fclose(file);
 
